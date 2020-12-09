@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+body{
+  background-color: rgb(255, 242, 242);
+  font-family: 'Roboto', sans-serif;
+  padding: 5%;
+  font-size: 15px;
+}
+
+ul{
+  padding: 0;
+}
+
+li{
+  list-style: none;
+}
+
+/* post style */
+#dropdownList{
+  background-color: white;
+  padding: 10px;
+  display: none;
+}
+
+#dropdownList li{
+  padding: 5px;
+}
+
+#dropdownList li:hover{
+  cursor: pointer;
+  background-color: rgb(165, 164, 164);
+}
+
+#postContainer{
+  margin-bottom: 8%;
+  padding: 15px;
+  background-color: rgb(207, 187, 190);
+}
+
+.categoryDiv{
+  display: none;
+}
+
+.inputDiv{
+  margin: 2% 0;
+}
+/* JSON data name style */
+.container{
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+}
+
+#total{
+  background-color: rgb(160, 160, 160);
+}
+
+.subtitle{
+  background-color: rgb(222, 222, 246);
+  font-size: 1.1em;
+  padding: 10px;
+}
+
+#vegeTitle{
+  background-color: rgb(170, 253, 170);
+}
+
+#meatTitle{
+  background-color: rgb(189, 141, 141);
+}
+
+/* JSON week style */
+#otherList{
+  background-color: rgb(189, 183, 183);
+  padding: 10px;
+}

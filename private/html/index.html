@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Final</title>
+  <!-- fontAwesome -->
+  <script src="https://kit.fontawesome.com/d847cbed4d.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <!-- navigation here -->
+    </nav>
+  </header>
+  <section>
+    <h2>Shopping List Project</h2>
+    <!-- POST area -->
+    <div id="postContainer">
+      <h3>Add a new product to the shopping list</h3>
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          Select the Category
+        </button>
+        <div class="dropdown">
+          <ul id="dropdownList">
+            <li id="groceryLi">Grocery</li>
+            <li id="meatsLi">meats</li>
+            <li id="dairyLi">dairy</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="grocery" class="categoryDiv grocery">
+        <h3 class="subtitle">Select Grocery from below</h3>
+        <input class="productInput" type="radio" id="carrots" name="vege" value="carrots" >
+        <label for="carrots">Carrots</label>
+        <input class="productInput" type="radio" id="potato" name="vege" value="potato" >
+        <label for="potato">Potato</label>
+        <input class="productInput" type="radio" id="onion" name="vege" value="onion" >
+        <label for="onion">Onion</label>
+      </div>
+
+      <div id="meats" class="categoryDiv meats" >
+        <h3 class="subtitle">Select Meat from below</h3>
+        <input class="productInput" type="radio" id="chicken" name="meat" value="chicken">
+        <label for="chicken">Chicken</label>
+        <input class="productInput" type="radio" id="beef" name="meat" value="beef" >
+        <label for="beef">Beef</label>
+        <input class="productInput" type="radio" id="pork" name="meat" value="pork" >
+        <label for="pork">Pork</label>
+      </div>
+
+      <div id="dairy" class="categoryDiv daily">
+        <h3 class="subtitle">Select Daily from below</h3>
+        <input class="productInput" type="radio" id="milk" name="daily" value="milk">
+        <label for="milk">Milk</label>
+        <input class="productInput" type="radio" id="butter" name="daily" value="butter" >
+        <label for="butter">Butter</label>
+        <input class="productInput" type="radio" id="cheese" name="daily" value="cheese" >
+        <label for="cheese">Cheese</label>
+      </div>
+
+      <div class="inputDiv">
+        <label for="input02">Qty</label>
+        <input id="input02" name="input02" type="text" />
+      </div>
+
+      <button id="submitButton">Submit</button>
+      <div id="testContainer">
+        <!-- testing -->
+      </div>
+    </div>
+
+    <div id="container02">
+      <!-- html data is here -->
+    </div>
+
+    <!-- main section GET -->
+    <h3>Shopping List</h3>
+    <h4 id="total" class="subtitle">Total:</h4>
+    <div id="container01">
+    </div>
+
+    <!-- name json is here -->
+    <h4 id="vegeTitle" class="subtitle">Grocery List</h4>
+    <div id="groceryContainer" calss="container">
+    </div>
+
+    <h4 id="meatTitle" class="subtitle">Meat List</h4>
+    <div id="meatContainer" calss="container">
+    </div>
+
+    <h4 id="dairyTitle" class="subtitle">Daily List</h4>
+    <div id="dailyContainer" calss="container">
+    </div>
+
+    <div id="otherList">
+      <h3>Other List</h3>
+      <div id="container03">
+        <!-- week json data is here -->
+      </div>
+    </div>
+
+  </section>
+  <footer>
+    <!-- footer here -->
+  </footer>
+
+  <!-- jQuery CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="/js/script.js"></script>
+</body>
+
+</html>
